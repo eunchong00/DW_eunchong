@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz</title>
+  <style>
+    *{
+      margin: 0; padding: 0;
+      font-size: 12px;
+    }
+    #space{
+      width: 1024px;
+      height: 700px;
+      margin: 0 auto;
+      
+
+    }
+
+    #space > div:nth-child(1){
+      height: 200px;
+      position: relative;
+    }
+    #space > div:nth-child(1) div#top-left-box{
+      position: absolute;
+      left: 0; top: 0;
+    }
+
+    #space > div:nth-child(1) div#top-right-box{
+      position: absolute;
+      right: 0; top: 0;
+    }
+
+    #center{
+      display: block;
+      margin: 0 auto;
+    }
+
+    .box{
+      width: 200px;
+      height: 200px;
+      background: blue;
+
+    }
+    
+    /* max-width, min-width*/
+
+  </style>
+
+</head>
+<body>
+  <div id="space">
+    <div >
+      <div id="top-left-box"  class="box"></div>
+      <div id="top-right-box" class="box"></div>
+    </div>
+    <div>
+      <div id="center" class="box"></div>
+    </div>
+  </div>
+
+</body>
+</html>
